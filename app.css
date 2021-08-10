@@ -1,0 +1,99 @@
+.main{
+    height: 100vh;
+    background: #efefef;
+}
+
+.container{
+    width: 1199px;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.tiles-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.col-md-31{
+    width: 31.33%;
+}
+
+
+
+.tile{
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.btn{
+    background-color: #72c3dc;
+    border-color: #72c3dc;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-bottom: 3px solid #3894b1;
+    cursor: pointer;
+}
+
+.btn-container{
+    display: flex;
+    flex-flow: column;
+}
+
+#shuffle{
+    margin-bottom: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+@media (min-width:250px) and (max-width:576px) {
+    .container{
+        flex-flow: column-reverse;
+        text-align: center;
+        width: 90%;
+    }
+    .tiles-container{
+        margin: auto;
+        width: 100%;
+    }
+    .col-xs-100{
+        width: 100%;
+    }
+    .tile{
+        height: 40px;
+        font-size: 20px;
+        color: #000000;
+        margin-bottom: 5px;
+        background-color: #efefef !important;
+    }
+    .main{
+        background-color: #FFFFFF;
+    }
+    .btn-container{
+        flex-flow: row;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    #shuffle{
+        margin-right:10px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:1199px) {
+    .container{
+        width: 90%;
+    }
+}
